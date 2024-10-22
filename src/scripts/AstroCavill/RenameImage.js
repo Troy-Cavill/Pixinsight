@@ -1,7 +1,6 @@
 #include <pjsr/StdButton.jsh>
 #include <pjsr/StdIcon.jsh>
 #include <pjsr/Sizer.jsh>
-#include <pjsr/NumericControl.jsh>
 
 #feature-id    RenameImage : AstroCavill > RenameImage;
 #feature-info  Renaming images boiii;
@@ -11,13 +10,23 @@
 #define VERSION "0.1";
 
 var ToolParameters = {
-    targetView: undefined,
-    save: function () {},
-    load: function () {}
+    targetView: undefined
 };
 
 function RenameImage() {
     let defaultName = "TestName";
+
+    let P = new PixelMath;
+    P.expression = ToolParameters.targetView.id;
+    with (P) {
+        useSingleExpression = true;
+        generateOutput = true;
+        optimization = true;
+        createNewImage = true;
+        showNewImage = true;
+        newImageId = defaultName;
+        executeOn(ToolParameters.targetView.id);
+    }
 }
 
 function DialogWindow() {
