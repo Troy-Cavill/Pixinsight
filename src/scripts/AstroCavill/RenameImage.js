@@ -2,12 +2,12 @@
 #include <pjsr/StdIcon.jsh>
 #include <pjsr/Sizer.jsh>
 
-#feature-id    RenameImage : AstroCavill > RenameImage;
-#feature-info  Renaming images boiii;
+#feature-id    RenameImage : AstroCavill > RenameImage
+#feature-info  Renaming images boiii
 
-#define DEVELOPER_NAME "Troy Cavill";
-#define TITLE "RenameImage";
-#define VERSION "0.1";
+#define DEVELOPER_NAME "Troy Cavill"
+#define TITLE "RenameImage"
+#define VERSION "0.1"
 
 var ToolParameters = {
     targetView: undefined
@@ -25,7 +25,7 @@ function RenameImage() {
         createNewImage = true;
         showNewImage = true;
         newImageId = defaultName;
-        executeOn(ToolParameters.targetView.id);
+        executeOn(ToolParameters.targetView);
     }
 }
 
