@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xri version="1.0">
+  <description>
+     <p>
+        AstroCavill's repo for pix scripts
+     </p>
+  </description>
+   <platform os="all" arch="noarch" version="1.8.9-1:1.9.1">
+      <package fileName="astrocavill-2024-10-22.zip"
+               sha1="14ad59bed8cfd85d86f1b9eea9ac3bd6e372f510"
+               type="script"
+               releaseDate="20241022">
+         <title>
+            AstroCavill processing suite 2024-10-22
+         </title>
+         <remove>
+            src/scripts/RenameImage.js,
+         </remove>
+         <description>
+         <h3>Rename Image: Release 0.1.0</h3>
+         <p>Purely testing</p>
+         </description>
+      </package>
+   </platform>
+</xri>
