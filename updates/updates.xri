@@ -7,7 +7,7 @@
   </description>
    <platform os="all" arch="noarch" version="1.8.9-1:1.9.1">
       <package fileName="astrocavill-2024-10-22.zip"
-               sha1="14ad59bed8cfd85d86f1b9eea9ac3bd6e372f510"
+               sha1="9fc34259523ef4456ffab2c41a599770604e5846"
                type="script"
                releaseDate="20241022">
          <title>
